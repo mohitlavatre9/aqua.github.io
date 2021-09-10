@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aligning Form Controls</title>
+		<style type="text/css">
+			body {
+				font-family: Arial, Verdana, sans-serif;}
+			div {
+				border-bottom: 0px solid #efefef;
+				margin: 10px;
+				padding-bottom: 10px;
+				width: 260px;}
+			.title {
+				float: left;
+				width: 70px;
+				text-align: right;
+				padding-right: 10px;}
+			.radio-buttons label {
+				float: none;}
+
+				.rightTab {
+                 width: 80%;
+                    float: left;
+
+				.dropdown {
+                   height: 35px;
+                   width: 140px;
+                   padding: 5px;
+                   margin: 10px;  
+                   margin-top: 15px;
+                   border: 1px solid #c0c0c0;
+                   border-radius: 2px;	
+
+		
+					
+			.submit {
+				width: 0px;
+				float: right;
+				width: 100px;
+				text-align: left;
+				padding-right: 415px;}
+		</style>
+	</head>
+	<body>
+		<form action="example.php" method="post">
+			<div>
+				<label for="user id" class="title">User Id:</label>
+				<input type="text" id="name" name="name" />
+			</div>
+
+			<div>
+				<label for="Password" class="title">Password:</label>
+				<input type="text" id="name" name="name" />
+			</div>
+
+			<div>
+				<label for="name" class="title">Name:</label>
+				<input type="text" id="name" name="name" />
+			</div>
+
+			<div>
+				<label for="Address" class="title">Address:</label>
+				<input type="text" id="name" name="name" />
+			</div>
+
+
+
+			<div class="dropdown">
+				<label for="hear-about">Country:</label>
+					<select name="referrer" id="hear-about">
+						<option value="google">India</option>
+						<option value="friend">Other</option>
+					</select>
+			</div>
+
+			<div>
+				<label for="Address" class="title">Zip code:</label>
+				<input type="text" id="name" name="name" />
+			</div>
+
+			<div>
+				<label for="Address" class="title">Email:</label>
+				<input type="text" id="name" name="name" />
+			</div>
+
+			<div class="radio-buttons">
+				<span class="title">Sex:</span>
+				<input type="radio" name="gender" id="male" value="M" />
+				<label for="male">M</label>
+				<input type="radio" name="gender" id="female" value="F" />
+				<label for="female">F</label><br />
+			</div>
+
+			<div class="radio-buttons">
+				<span class="title">Language:</span>
+				<input type="checkbox" name="gender" id="male" value="M" />
+				<label for="male">M</label>
+				<input type="Checkbox" name="gender" id="female" value="F" />
+				<label for="female">F</label><br />
+			</div>
+
+			
+			<div>
+			<label for="comments">About:</label><br />
+			<textarea rows="4" cols="40" id="comments"></textarea>
+		    </div>
+			<div class="submit">
+				<input type="submit" value="Register" id="submit" />
+			</div>
+		</form>
+	</body>
+</html>
